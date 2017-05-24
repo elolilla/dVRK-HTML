@@ -1,0 +1,22 @@
+<launch>
+  <arg name="model" default="$(find dvrk-html)/model/$(arg arm).urdf.xacro" />
+  
+  <node name="dvrk_$(arg arm)_node"
+        pkg="dvrk_robot"
+        type="dvrk_console_json"        
+        args="-j $(find saw_intuitive_research_kit)/../share/console-$(arg arm)_KIN_SIMULATED.json"                     
+        output="screen"/>
+
+  <group>
+      <param name="robot_description" command="rosrun xacro xacro.py $(arg model) prefix:=$(arg arm)_"/>
+
+      <rosparam param="source_list" subst_value="True">
+        [/dvrk/$(arg arm)/state_joint_current]
+      </rosparam>
+ <node name="joint_state_publisher" pkg="joint_state_publisher" type="joint_state_publisher" />
+      <node name="robot_state_publisher" pkg="robot_state_publisher" type="state_publisher" />
+
+      <node name="tf2_web_republisher" pkg="tf2_web_republisher" type="tf2_web_republisher" />
+  </group>
+
+</launch>

@@ -1,0 +1,83 @@
+<?xml version="1.0"?>
+<package>
+  <name>dvrk-html</name>
+  <version>0.0.0</version>
+  <description>HTML test packages</description>
+
+  <maintainer email="lilla.elo@irob.uni-obuda.hu">Lilla Elo</maintainer>
+  <license>CISST</license>
+ 
+  <author email="lilla.elo@irob.uni-obuda.hu">Lilla Elo</author>
+
+  <buildtool_depend>catkin</buildtool_depend>?
+  
+  
+  <build_depend>message_generation</build_depend>
+  <run_depend>message_runtime</run_depend>
+
+  <build_depend>cisst_ros_bridge</build_depend>
+  <build_depend>saw_intuitive_research_kit</build_depend>
+  <build_depend>dvrk_kinematics</build_depend>
+  <build_depend>geometry_msgs</build_depend>
+  <build_depend>roscpp</build_depend>
+  <build_depend>roslib</build_depend>
+   <build_depend>ros3d</build_depend>
+ <build_depend>evenmitter</build_depend>
+  <build_depend>rospy</build_depend>
+  <build_depend>sensor_msgs</build_depend>
+  <build_depend>std_msgs</build_depend>
+  <build_depend>tf</build_depend>
+  <build_depend>tf_conversions</build_depend>
+  <build_depend>dvrk_robot</build_depend>
+
+
+ <build_depend>liburdfdom-dev</build_depend>
+  <build_depend>liburdfdom-headers-dev</build_depend>
+  <build_depend>rosconsole_bridge</build_depend>
+  <build_depend>roscpp</build_depend>
+  <build_depend>urdf_parser_plugin</build_depend>
+  <build_depend>pluginlib</build_depend>
+  <build_depend>cmake_modules</build_depend>
+  <build_depend>rostest</build_depend>
+
+  <run_depend>urdf</run_depend>
+  <run_depend>xacro</run_depend>
+
+  <run_depend>cisst_ros_bridge</run_depend>
+  <run_depend>saw_intuitive_research_kit</run_depend>
+  <run_depend>dvrk_kinematics</run_depend>
+  <run_depend>geometry_msgs</run_depend>
+  <run_depend>roscpp</run_depend>
+  <run_depend>roslib</run_depend>
+  <run_depend>rospy</run_depend>
+  <run_depend>sensor_msgs</run_depend>
+  <run_depend>std_msgs</run_depend>
+  <run_depend>tf</run_depend>
+  <run_depend>dvrk_robot</run_depend>
+  <run_depend>tf_conversions</run_depend>
+
+  <run_depend>liburdfdom-dev</run_depend>
+  <run_depend>liburdfdom-headers-dev</run_depend>
+  <run_depend>rosconsole_bridge</run_depend>
+  <run_depend>roscpp</run_depend>
+  <run_depend>urdf_parser_plugin</run_depend>
+  <run_depend>pluginlib</run_depend>
+
+
+
+
+  <test_depend>python-mock</test_depend>
+
+  <run_depend>joint_state_publisher</run_depend>
+  <run_depend>robot_state_publisher</run_depend>
+   
+
+  <!-- The export tag contains other, unspecified, tags -->
+  <export>
+    <!-- You can specify that this package is a metapackage here: -->
+    <!-- <metapackage/> -->
+
+    <!-- Other tools can request additional information be placed here -->
+
+  </export>
+</package>
